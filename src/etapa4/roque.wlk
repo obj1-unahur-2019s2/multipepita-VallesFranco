@@ -22,6 +22,7 @@ var aves = [] // Listas en clase
 		aves.remove(ave)
 	}	// Listas en clase
 	method entrenarAves() {
-		aves.filter({e => e.estaFeliz()}).forEach({a => a.self.entrenar()})		
-	}	// Listas en clase - completar.
+		var avesFelices = aves.filter({e => e.estaFeliz()})	
+			avesFelices.forEach({a => a.self.entrenar()})
+	}	
 }
